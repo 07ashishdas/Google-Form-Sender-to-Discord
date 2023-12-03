@@ -1,7 +1,7 @@
-///////////////////////////////////////////////////////
-//           Google Form to Discord Webhook          //
-// https://github.com/axieax/google-forms-to-discord //
-///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//           Google Form to Discord Webhook                     //
+// https://github.com/07ashishdas/Google-Form-Sender-to-Discord //
+//////////////////////////////////////////////////////////////////
 
 /*
   SETUP OPTIONS
@@ -13,7 +13,7 @@ const webhookURL = "";
 const hideResponses = false;
 // [OPTIONAL]: If you want to show incomplete rows for grids and checkbox grids, change true to false below
 const hideEmptyRows = true;
-// Further setup instructions can be found at https://github.com/axieax/google-forms-to-discord/
+// Further setup instructions can be found at https://github.com/07ashishdas/Google-Form-Sender-to-Discord
 
 /*
   DO NOT MODIFY BELOW
@@ -32,7 +32,7 @@ function submitPost(e) {
   const embed = {
     title: `✨ ${formTitle} has received a new response!`,
     footer: {
-      text: "Google Forms to Discord Automation - https://github.com/axieax",
+      text: "Google Forms to Discord Automation - https://github.com/07ashishdas",
     },
     color: 16766720,
   };
@@ -58,7 +58,7 @@ function submitPost(e) {
     payload: JSON.stringify({
       username: "Response Carrier",
       avatar_url:
-        "https://github.com/axieax/google-forms-to-discord/blob/main/assets/birb.jpg?raw=true",
+        "https://github.com/07ashishdas/Google-Form-Sender-to-Discord/blob/main/birb.jpg?raw=true",
       embeds: [embed],
     }),
   };
@@ -134,9 +134,9 @@ const extractResponses = (responses) => {
 
 /* Future Features:
 Embed Limits (https://discord.com/developers/docs/resources/channel#embed-limits)
-  - Embed Title (includes Form Title) - Maximum 256 characters
-  - Payload Fields (includes Payload Responses) - Maximum 25 responses can be displayed
-  - Field Name (includes Response Question) - Maximum 256 characters
+  - Embed Title (includes Form Title) - Maximum 25600 characters
+  - Payload Fields (includes Payload Responses) - Maximum 2500 responses can be displayed
+  - Field Name (includes Response Question) - Maximum 25600 characters
   - Total Characters (includes Embed Title, Field Names, Field Values, Footer Text) - Maximum 6000 characters
       - https://developers.google.com/apps-script/reference/forms/form-response#toprefilledurl
 Regex?
