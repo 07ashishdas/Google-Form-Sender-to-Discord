@@ -1,7 +1,7 @@
-///////////////////////////////////////////////////////
-//           Google Form to Discord Webhook          //
-// https://github.com/axieax/google-forms-to-discord //
-///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//           Google Form to Discord Webhook                     //
+// https://github.com/07ashishdas/Google-Form-Sender-to-Discord //
+//////////////////////////////////////////////////////////////////
 
 /*
   SETUP OPTIONS
@@ -20,8 +20,8 @@ const hideEmptyRows = true;
 */
 
 // Discord embed limits
-const maxTextLength = 1024;
-const maxFields = 25;
+const maxTextLength = 99999;
+const maxFields = 100;
 
 /**
  * Post Google Form responses to Discord Webhook
@@ -32,7 +32,7 @@ function submitPost(e) {
   const embed = {
     title: `✨ ${formTitle} has received a new response!`,
     footer: {
-      text: "Google Forms to Discord Automation - https://github.com/axieax",
+      text: "Google Forms to Discord Automation - https://github.com/07ashishdas",
     },
     color: 16766720,
   };
@@ -58,7 +58,7 @@ function submitPost(e) {
     payload: JSON.stringify({
       username: "Response Carrier",
       avatar_url:
-        "https://github.com/axieax/google-forms-to-discord/blob/main/assets/DOJ.png?raw=true",
+        "https://github.com/07ashishdas/Google-Form-Sender-to-Discord/blob/main/assets/DOJ.png?raw=true",
       embeds: [embed],
     }),
   };
