@@ -58,7 +58,7 @@ function submitPost(e) {
     payload: JSON.stringify({
       username: "Response Carrier",
       avatar_url:
-        "https://github.com/07ashishdas/Google-Form-Sender-to-Discord/blob/main/birb.jpg?raw=true",
+        "https://github.com/07ashishdas/Google-Form-Sender-to-Discord/blob/main/mailer.png?raw=true",
       embeds: [embed],
     }),
   };
